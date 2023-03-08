@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-xrmx
+  namespace: e2e-demos-auuo-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:610a3d8485ee424e3b099bd2419ded5ab0aca7576ea7764cb32061a313fa1f97
+        name: my-python
+        resources: {}
+status: {}
